@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Angie’s Den — Reiki &amp; Holistic Healing, Kennington, Ashford</title>
+<meta name="description" content="Reiki healing (Usui system), chakra balancing, aura cleanse and crystals in a private, insured space in Kennington, Ashford.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf1ee; --bg2:#f4e3e3; --ink:#2f1d3a; --mute:#7d6a85; --line:rgba(47,29,58,.14);
+  --acc:#b0409a; --acc2:#e08a5c; --glow:rgba(176,64,154,.28); --pillink:#fff;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#120a1a;--bg2:#1b1026;--ink:#f6ebf2;--mute:#a590b0;--line:rgba(246,235,242,.14);--acc:#e07cc8;--acc2:#f0a574;--glow:rgba(224,124,200,.35);--pillink:#1a0d22}
+}
+:root[data-theme="dark"]{--bg:#120a1a;--bg2:#1b1026;--ink:#f6ebf2;--mute:#a590b0;--line:rgba(246,235,242,.14);--acc:#e07cc8;--acc2:#f0a574;--glow:rgba(224,124,200,.35);--pillink:#1a0d22}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--acc);color:#fff}
+
+nav{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:80;display:flex;align-items:center;gap:26px;padding:9px 10px 9px 22px;border:1px solid var(--line);border-radius:100px;background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);width:max-content;max-width:calc(100vw - 24px)}
+.logo{font-family:var(--serif);font-size:22px;white-space:nowrap}
+.logo i{color:var(--acc)}
+.links{display:flex;gap:22px;font-size:13px;color:var(--mute)}
+.links a:hover{color:var(--ink)}
+.pill{padding:9px 18px;border-radius:100px;background:var(--ink);color:var(--pillink);font-size:13px;font-weight:400;white-space:nowrap}
+@media(max-width:760px){.links{display:none}nav{gap:14px}}
+
+.btn{display:inline-flex;align-items:center;gap:12px;padding:17px 30px;border-radius:100px;font-size:15px;font-weight:400;transition:transform .5s var(--ease),box-shadow .5s}
+.btn.p{background:linear-gradient(110deg,var(--acc),var(--acc2));color:#fff}
+.btn.p:hover{box-shadow:0 0 50px 4px var(--glow);transform:translateY(-2px)}
+.btn.g{border:1px solid var(--line)}
+.btn.g:hover{border-color:var(--acc);color:var(--acc)}
+.btn .ar{transition:transform .5s var(--ease)}.btn:hover .ar{transform:translateX(5px)}
+
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 5vw 9vh;overflow:hidden;isolation:isolate}
+#fx{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.aurora{position:absolute;inset:-20%;z-index:-2;filter:blur(70px);opacity:.8}
+.aurora b{position:absolute;border-radius:50%}
+.aurora b:nth-child(1){width:50vw;height:50vw;left:5%;top:5%;background:radial-gradient(circle,rgba(176,64,154,.4),transparent 65%);animation:d1 22s ease-in-out infinite alternate}
+.aurora b:nth-child(2){width:40vw;height:40vw;right:0;top:25%;background:radial-gradient(circle,rgba(224,138,92,.35),transparent 65%);animation:d2 28s ease-in-out infinite alternate}
+.aurora b:nth-child(3){width:32vw;height:32vw;left:40%;bottom:-10%;background:radial-gradient(circle,rgba(130,90,200,.3),transparent 65%);animation:d1 30s ease-in-out infinite alternate-reverse}
+@keyframes d1{to{transform:translate(12vw,8vh) scale(1.15)}}
+@keyframes d2{to{transform:translate(-14vw,-6vh) scale(.9)}}
+.eyebrow{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:14px;margin-bottom:3vh}
+.eyebrow::before{content:"";width:40px;height:1px;background:var(--acc);flex:none}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(60px,15vw,230px);line-height:.9;letter-spacing:-.03em}
+.ln{display:block;overflow:hidden;padding-bottom:.1em}
+.ln>span{display:block;transform:translateY(112%) rotate(3deg);transform-origin:left bottom;transition:transform 1.4s var(--ease)}
+.loaded .ln>span{transform:none}
+.ln:nth-child(2)>span{transition-delay:.12s}.ln:nth-child(3)>span{transition-delay:.24s}
+h1 em{color:var(--acc);font-style:italic}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:5vh;flex-wrap:wrap}
+.hero-foot p{max-width:440px;color:var(--mute);font-size:clamp(15px,1.2vw,18px)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.fade{opacity:0;transform:translateY(24px);filter:blur(8px);transition:all 1.4s var(--ease) .7s}
+.loaded .fade{opacity:1;transform:none;filter:none}
+.lotus{position:absolute;right:5vw;top:13vh;width:min(30vw,380px);z-index:-1;opacity:0;transition:opacity 2s 1s;animation:bob 9s ease-in-out infinite alternate}
+.loaded .lotus{opacity:1}
+@keyframes bob{to{transform:translateY(-22px) rotate(2deg)}}
+@media(max-width:760px){.lotus{width:56vw;top:12vh;right:-6vw}}
+
+.label{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin-bottom:5vh;display:block}
+.statement{padding:24vh 5vw 18vh}
+.statement p{font-family:var(--serif);font-size:clamp(36px,6.2vw,100px);line-height:1.06;letter-spacing:-.015em;max-width:18em}
+.statement .w{display:inline-block;opacity:.14;filter:blur(7px);transition:opacity .5s,filter .5s;margin-right:.22em}
+.statement .w.on{opacity:1;filter:none}
+.statement .w.acc.on{color:var(--acc);font-style:italic}
+
+.services{padding:12vh 5vw}
+.services h2,.price h2,.story h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,92px);line-height:1;letter-spacing:-.02em;margin-bottom:7vh}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.card{padding:6vh 3vw 6vh 0;border-bottom:1px solid var(--line);position:relative;transition:padding .7s var(--ease)}
+.card:nth-child(even){padding-left:3vw;border-left:1px solid var(--line)}
+.card .n{font-family:var(--serif);font-size:clamp(70px,9vw,140px);line-height:.8;color:transparent;-webkit-text-stroke:1px var(--line);transition:all .8s var(--ease)}
+.card:hover .n{color:var(--acc);-webkit-text-stroke-color:var(--acc);transform:translateX(8px)}
+.card h3{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.2vw,48px);line-height:1;margin:3vh 0 10px}
+.card p{color:var(--mute);max-width:420px;font-size:15px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.card:nth-child(even){padding-left:0;border-left:0}}
+
+.story{display:grid;grid-template-columns:1fr 1.1fr;gap:6vw;padding:12vh 5vw;background:var(--bg2)}
+.story .sticky{position:sticky;top:16vh;align-self:start}
+.story h2 em{color:var(--acc)}
+.steps{display:flex;flex-direction:column;gap:12vh;padding-top:4vh}
+.step{border-left:1px solid var(--line);padding-left:clamp(20px,3vw,48px);position:relative}
+.step::before{content:"";position:absolute;left:-4px;top:14px;width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 20px var(--acc)}
+.step .big{font-family:var(--serif);font-size:clamp(64px,9vw,140px);line-height:.9;color:var(--acc)}
+.step h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3vw,44px);margin:12px 0 8px}
+.step p{color:var(--mute);max-width:440px}
+@media(max-width:860px){.story{grid-template-columns:1fr}.story .sticky{position:relative;top:0}}
+.reveal{opacity:0;transform:translateY(50px);filter:blur(10px);transition:all 1.2s var(--ease)}
+.reveal.in{opacity:1;transform:none;filter:none}
+
+.price{padding:16vh 5vw}
+.row{display:grid;grid-template-columns:1.2fr 1.4fr .8fr;align-items:center;gap:3vw;padding:5vh 0;border-top:1px solid var(--line);position:relative}
+.row:last-of-type{border-bottom:1px solid var(--line)}
+.row h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.2vw,46px);line-height:1}
+.row p{color:var(--mute);font-size:15px}
+.amt{font-family:var(--serif);font-size:clamp(70px,11vw,170px);line-height:.85;text-align:right;transition:color .5s,transform .7s var(--ease)}
+.row:hover .amt{color:var(--acc);transform:translateX(-10px)}
+.amt s{font-size:.28em;color:var(--mute);margin-right:.4em;vertical-align:top;display:inline-block;padding-top:.5em}
+@media(max-width:760px){.row{grid-template-columns:1fr;gap:10px}.amt{text-align:left;order:-1}}
+.note{margin-top:5vh;color:var(--mute);font-size:14px}
+.note a{color:var(--acc);border-bottom:1px solid var(--glow)}
+
+.trust{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust>div{padding:12vh 5vw}
+.trust>div+div{border-left:1px solid var(--line)}
+.areas li{list-style:none;font-family:var(--serif);font-size:clamp(40px,6vw,92px);line-height:1.04;color:var(--mute);transition:color .5s,transform .7s var(--ease)}
+.areas li.on{color:var(--ink)}.areas li:hover{color:var(--acc);transform:translateX(16px)}
+.badge{display:flex;align-items:center;gap:18px;padding:22px 0;border-top:1px solid var(--line)}
+.badge:first-of-type{border-top:0}
+.seal{width:62px;height:62px;border-radius:50%;border:1px solid var(--acc);display:grid;place-items:center;color:var(--acc);font-size:22px;flex:none}
+.badge b{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.2vw,32px);display:block;line-height:1.1}
+.badge .s{font-size:13px;color:var(--mute)}
+@media(max-width:860px){.trust{grid-template-columns:1fr}.trust>div+div{border-left:0;border-top:1px solid var(--line)}.trust>div{padding:9vh 6vw}}
+
+.marquee{border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:3vh 0}
+.marquee div{display:inline-block;animation:mq 40s linear infinite;font-family:var(--serif);font-style:italic;font-size:clamp(28px,4vw,58px);color:var(--mute)}
+.marquee span{margin:0 2.4vw}.marquee i{color:var(--acc);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.final{position:relative;min-height:90svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:16vh 5vw 10vh;overflow:hidden;isolation:isolate}
+.final h2{font-family:var(--serif);font-weight:400;font-size:clamp(60px,15vw,250px);line-height:.88;letter-spacing:-.03em}
+.final h2 em{color:var(--acc)}
+.final p{margin:5vh 0;color:var(--mute);max-width:480px}
+.btn.xl{padding:24px 44px;font-size:clamp(16px,1.5vw,20px)}
+.sig{margin-top:4vh;font-family:var(--serif);font-style:italic;font-size:clamp(26px,3vw,42px);color:var(--acc)}
+footer{padding:6vh 5vw 5vh;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
+footer a:hover{color:var(--ink)}
+.support{width:100%;font-size:12px;max-width:620px;opacity:.85}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .ln>span,.fade,.reveal{transform:none!important;opacity:1!important;filter:none!important}
+  .statement .w{opacity:1;filter:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#top" class="logo">Angie’s <i>Den</i></a>
+  <div class="links"><a href="#services">Healing</a><a href="#how">Sessions</a><a href="#fees">Prices</a><a href="#find">Find us</a></div>
+  <a class="pill" href="#start">Book a session</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="aurora"><b></b><b></b><b></b></div>
+  <canvas id="fx"></canvas>
+  <div class="lotus" aria-hidden="true">
+    <svg viewBox="0 0 300 300">
+      <defs>
+        <linearGradient id="pt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e07cc8"/><stop offset="1" stop-color="#8a3fa8"/></linearGradient>
+        <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e08a5c"/><stop offset="1" stop-color="#b0409a"/></linearGradient>
+      </defs>
+      <path d="M150 20 L48 98 M150 20 L252 98" stroke="url(#wg)" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M150 270 C95 245 85 170 150 110 C215 170 205 245 150 270Z" fill="url(#pt)" opacity=".9"/>
+      <path d="M150 270 C80 258 40 205 52 150 C105 165 140 205 150 270Z" fill="url(#pt)" opacity=".6"/>
+      <path d="M150 270 C220 258 260 205 248 150 C195 165 160 205 150 270Z" fill="url(#pt)" opacity=".6"/>
+      <g><circle cx="150" cy="60" r="7" fill="#b86bd8"/><circle cx="150" cy="82" r="7" fill="#5a6fd8"/><circle cx="150" cy="104" r="7" fill="#46b0c8"/><circle cx="150" cy="126" r="7" fill="#7fc060"/><circle cx="150" cy="148" r="7" fill="#f0c040"/><circle cx="150" cy="170" r="7" fill="#f08a40"/><circle cx="150" cy="192" r="7" fill="#e04848"/></g>
+    </svg>
+  </div>
+
+  <span class="eyebrow fade">Reiki · Crystals · Kennington, Ashford</span>
+  <h1 aria-label="Relax. Rebalance. Reconnect.">
+    <span class="ln"><span>Relax.</span></span>
+    <span class="ln"><span>Rebalance.</span></span>
+    <span class="ln"><span><em>Reconnect.</em></span></span>
+  </h1>
+  <div class="hero-foot">
+    <p class="fade">Angie’s Den is a sanctuary for healing and inner peace — Reiki in the Usui system, in a private, insured space with free parking.</p>
+    <div class="cta-row fade">
+      <a class="btn p" href="#start">Book your first session <span class="ar">→</span></a>
+      <a class="btn g" href="#fees">See prices</a>
+    </div>
+  </div>
+</header>
+
+<section class="statement">
+  <span class="label">( 01 — A private journey )</span>
+  <p id="stmt">Self-healing is a private journey, and only when the time is right are you ready to take the next step. <span class="acc">The first step is showing up.</span></p>
+</section>
+
+<section class="services" id="services">
+  <span class="label">( 02 — What’s on offer )</span>
+  <h2>Gentle ways<br>to find balance</h2>
+  <div class="grid">
+    <article class="card reveal"><div class="n">01</div><h3>Reiki healing</h3><p>Usui system of natural healing, offered to ease stress, promote relaxation and restore physical and emotional balance.</p></article>
+    <article class="card reveal"><div class="n">02</div><h3>Chakra balancing</h3><p>Included within your Reiki session, working through the energy centres of the body.</p></article>
+    <article class="card reveal"><div class="n">03</div><h3>Aura cleanse</h3><p>Also part of your session — a calm, quiet reset in a safe and private space.</p></article>
+    <article class="card reveal"><div class="n">04</div><h3>Crystals from £1</h3><p>A small selection to take home: tumbles, bracelets, worry stones, palms and much more.</p></article>
+  </div>
+</section>
+
+<section class="story" id="how">
+  <div class="sticky">
+    <span class="label">( 03 — Your visit )</span>
+    <h2>Simple <em>to arrive.</em><br>Easy to <em>receive.</em></h2>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><div class="big">01</div><h3>Send a message</h3><p>Sessions are by appointment only. Send a private message on Facebook for details and to find a time.</p></div>
+    <div class="step reveal"><div class="big">02</div><h3>Arrive and settle in</h3><p>Park for free at the private premises in Kennington and receive the warmest welcome.</p></div>
+    <div class="step reveal"><div class="big">03</div><h3>Simply be open</h3><p>You don’t need to understand Reiki to receive it. Relax for an hour and be open to receive.</p></div>
+  </div>
+</section>
+
+<section class="price" id="fees">
+  <span class="label">( 04 — Prices )</span>
+  <h2>Clear and<br>welcoming.</h2>
+  <div class="row reveal"><h3>First session</h3><p>1 hour, with the warmest welcome and £10 off.</p><div class="amt"><s>£40</s>£30</div></div>
+  <div class="row reveal"><h3>Reiki session</h3><p>1 hour of Reiki healing including chakra balancing and aura cleanse.</p><div class="amt">£40</div></div>
+  <div class="row reveal"><h3>Crystals</h3><p>Tumbles, bracelets, worry stones and palms. Prices start from just £1.</p><div class="amt">£1+</div></div>
+  <p class="note">By appointment only. <a href="#start">Message Angela for details</a>.</p>
+</section>
+
+<section class="trust" id="find">
+  <div>
+    <span class="label">( 05 — Find us )</span>
+    <ul class="areas" style="padding:0"><li class="on">Kennington</li><li>Ashford</li><li>Free parking</li><li>By appointment</li></ul>
+  </div>
+  <div>
+    <span class="label">( 06 — Peace of mind )</span>
+    <div class="badge"><div class="seal">✦</div><div><b>Private premises</b><span class="s">A private, safe space for healing</span></div></div>
+    <div class="badge"><div class="seal">✦</div><div><b>Insured</b><span class="s">Safe premises and insurance</span></div></div>
+    <div class="badge"><div class="seal">✦</div><div><b>Free private parking</b><span class="s">Right at the door</span></div></div>
+  </div>
+</section>
+
+<div class="marquee"><div><span>Relax</span><i>✦</i><span>Rebalance</span><i>✦</i><span>Reconnect</span><i>✦</i><span>Reiki</span><i>✦</i><span>Crystals</span><i>✦</i><span>Relax</span><i>✦</i><span>Rebalance</span><i>✦</i><span>Reconnect</span><i>✦</i><span>Reiki</span><i>✦</i><span>Crystals</span><i>✦</i></div></div>
+
+<section class="final" id="start">
+  <div class="aurora"><b></b><b></b><b></b></div>
+  <span class="label">( 07 — Begin )</span>
+  <h2>Be open<br>to <em>receive.</em></h2>
+  <p>Send a private message on Facebook for details. Thank you for popping by.</p>
+  <a class="btn p xl" href="#top">Message on Facebook <span class="ar">→</span></a>
+  <div class="sig">Angela</div>
+</section>
+
+<footer>
+  <span>© 2026 Angie’s Den – Holistic Healing · Kennington, Ashford</span>
+  <a href="#top">Back to top ↑</a>
+  <p class="support">Reiki is a complementary practice and is not a substitute for medical care. Please speak to your doctor about any health concerns.</p>
+</footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+requestAnimationFrame(()=>setTimeout(()=>document.body.classList.add('loaded'),150));
+
+const st=$('#stmt');
+st.innerHTML=st.innerHTML.replace(/(<span class="acc">)([\s\S]*?)(<\/span>)|([^<\s]+)/g,(m,a,b,c,d)=>{
+  if(a)return b.trim().split(/\s+/).map(w=>'<span class="w acc">'+w+'</span>').join(' ')+' ';
+  return d?'<span class="w">'+d+'</span> ':m});
+const words=$$('.w');
+let tick=false;
+function onScroll(){const t=innerHeight*.85;words.forEach(w=>w.classList.toggle('on',w.getBoundingClientRect().top<t));tick=false}
+if(!RM)addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});
+addEventListener('resize',onScroll);onScroll();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2});
+$$('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3)*.08+'s';io.observe(el)});
+
+const cv=$('#fx'),c=cv.getContext('2d'),dpr=Math.min(devicePixelRatio||1,2);
+let W,H,P=[];
+function size(){const r=cv.parentElement.getBoundingClientRect();W=cv.width=r.width*dpr;H=cv.height=r.height*dpr;
+  const n=innerWidth<760?35:80;
+  P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,r:(Math.random()*1.8+.5)*dpr,vx:(Math.random()-.5)*.12*dpr,vy:-(Math.random()*.25+.05)*dpr,a:Math.random()*.5+.2}))}
+size();addEventListener('resize',size);
+let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(cv);
+(function loop(){
+  if(vis){c.clearRect(0,0,W,H);
+    for(const p of P){p.x+=p.vx;p.y+=p.vy;if(p.y<-5)p.y=H+5;if(p.x<-5)p.x=W+5;if(p.x>W+5)p.x=-5;
+      c.beginPath();c.arc(p.x,p.y,p.r,0,6.283);c.fillStyle='rgba(224,138,160,'+p.a+')';c.fill()}}
+  if(!RM)requestAnimationFrame(loop)})();
+})();
+</script>
+</body>
+</html>
